@@ -1,76 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Catalogo from './components/catalogo';
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
+      <header>
         <h1 className="default-font-collor"><a className="default-font-collor h1-catalogo" href="#">Catálogo de Aulas</a></h1>
-        <div className="div-button-enter">
-          <a className="default-font-collor button-enter" href="#">Entrar</a>
-        </div>
+        <ul className="menu">
+          <li><a href="./components/login">Sign in</a></li>
+          <li><a href="#">Sign up</a></li>
+        </ul>
       </header>
       {/* Fim do header */}
       <div className="horizontal-line"></div>
       <body>
-        <div className="container">
-          <h1 className="default-font-collor">Módulos</h1>
-          <h3 className="color-subtitle">Selecione o módulo para verificar as aulas disponíveis:</h3>
-
-          {/* DIV Listando os Catalogos */}
-          <div className="grid-modules">
-            <div className="div-items">
-              <button className="button-class">
-                <div className="intra-button">
-                  <h5 className="default-font-collor">Aqui ficara uma imagem</h5>
-                </div>
-                <div>
-                  <h5 className="default-font-collor">Python WEB</h5>
-                  <span className="default-font-collor">10/10</span>
-                </div>
-              </button>
-            </div>
-
-            <div className="div-items">
-              <button className="button-class">
-                <div className="intra-button">
-                  <h5 className="default-font-collor">Aqui ficara uma imagem</h5>
-                </div>
-                <div>
-                  <h5 className="default-font-collor">Python WEB</h5>
-                  <span className="default-font-collor">10/10</span>
-                </div>
-              </button>
-            </div>
-
-            <div className="div-items">
-              <button className="button-class">
-                <div className="intra-button">
-                  <h5 className="default-font-collor">Aqui ficara uma imagem</h5>
-                </div>
-                <div>
-                  <h5 className="default-font-collor">Python WEB</h5>
-                  <span className="default-font-collor">10/10</span>
-                </div>
-              </button>
-            </div>
-
-            <div className="div-items">
-              <button className="button-class">
-                <div className="intra-button">
-                  <h5 className="default-font-collor">Aqui ficara uma imagem</h5>
-                </div>
-                <div>
-                  <h5 className="default-font-collor">Python WEB</h5>
-                  <span className="default-font-collor">10/10</span>
-                </div>
-              </button>
-            </div>
-          </div>
-
-        </div>
+        <Catalogo />
       </body>
-
     </div >
   );
 }
