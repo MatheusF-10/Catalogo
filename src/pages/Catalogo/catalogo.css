@@ -1,0 +1,153 @@
+
+
+/* Default font style */
+/* Estilo padrão de fonte */
+.default-font-collor{
+  color: 	#C0C0C0;
+}
+
+.color-subtitle{
+  color:#9370DB;
+}
+
+
+
+
+/* HEADER CSS */
+/* CSS do Cabeçalho */
+header{
+  height: 70px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 5px 15px #000;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.menu li a:hover{
+  color: #9370DB;
+  border-color: #9370DB;
+}
+
+/* Buttons Style and Anchors from header*/
+/* Estilo botoes e Ancoras do cabeçalho*/
+
+.h1-catalogo{
+  text-decoration: none;
+}
+
+.div-button-enter{
+  margin-top: 2%;
+}
+
+.button-enter{
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* Hovers over header elements */
+/* Hover dos elementos do cabeçalho*/
+
+.h1-catalogo:hover{
+  color: #9370DB;
+}
+
+.button-enter:hover{
+  color: #9370DB;
+}
+
+.horizontal-line{
+  width: 100%;
+  border: 0.5px solid;
+  color:#9370DB; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================= */
+
+
+/* BODY CSS */
+/* CSS do body */
+
+.container{
+  max-width: 960px;
+  margin: auto;
+}
+
+
+/* GRID CSS */
+
+.grid-modules{
+  align-self: center;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-areas: 
+  "button-class button-class button-class";
+  grid-gap: 20px;
+  justify-content: space-around;
+}
+
+/* CSS ITEMS */
+
+
+.button-class{
+  max-width: 400px;
+  min-width: 250px;
+
+  cursor: pointer;
+  background-color: #282c34;
+  grid-area: "button-class";
+
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgb(147, 112, 219);
+
+
+}
+
+
+
+/* Atribuindo responsividade */
+
+@media(max-width: 795px){
+  .grid-modules{
+    grid-template-areas: 
+  "button-class button-class";
+  }
+}
+
+@media(max-width:540px){
+  .grid-modules{
+    grid-template-areas: 
+  "button-class";
+  }
+}
+  
