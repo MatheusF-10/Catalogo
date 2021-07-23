@@ -1,0 +1,51 @@
+.botao-sair{
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+}
+
+.secao-painel{
+    display: flex;
+    align-items: center;
+    padding: 100px 20px 20px 20px;
+    width: 960px;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.titulo-painel{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.item-painel{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #9370DB;
+    padding: 40px;
+    border-radius: 800px;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.link-itens{
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.item-painel, .link-itens:hover{
+    border-color: #DDA0DD;
+    color:#DDA0DD ;
+    transition: 250ms ease-in;
+}
+
+
+

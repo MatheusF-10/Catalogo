@@ -101,6 +101,9 @@ header{
   margin: auto;
 }
 
+.titulo-pagina{
+  margin: 20px;
+}
 
 /* GRID CSS */
 
@@ -119,9 +122,10 @@ header{
 
 
 .button-class{
-  max-width: 400px;
-  min-width: 250px;
+  max-width: 600px;
+  min-width: 400px;
 
+  height: 200px;
   cursor: pointer;
   background-color: #282c34;
   grid-area: "button-class";

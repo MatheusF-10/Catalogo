@@ -1,7 +1,6 @@
-section{
+.section{
     display: flex;
     justify-content: space-around;
-
     padding: 100px 20px 20px 20px;
     align-items: center;
     
@@ -69,6 +68,8 @@ section{
     border-color: #BA55D3;
 }
 
+/* botao do formulario */
+
 .button-form{
     cursor: pointer;
     width: 100%;
@@ -83,4 +84,18 @@ section{
 .button-form:hover{
     background-color: #282c34;
     color:#BA55D3;
+}
+
+
+
+/* Responsividade */
+
+@media(max-width:1035px){
+    .section{
+        flex-wrap: wrap;
+    }
+    .box-login{
+        margin-top: 20px;
+    }
+
 }
