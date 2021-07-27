@@ -1,0 +1,107 @@
+.container{
+    max-width: 100%;
+    margin-left: 50px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.title-container{
+    text-align: center;
+    color: #fff ;
+}
+
+.grid-modules{
+  align-self: center;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-areas: 
+  "button-class button-class button-class";
+  grid-gap: 20px;
+  justify-content: space-around;
+}
+
+/* CSS ITEMS */
+
+
+.button-class{
+  max-width: 600px;
+  min-width: 400px;
+
+  height: 200px;
+  cursor: pointer;
+  background-color: #282c34;
+  grid-area: "button-class";
+
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgb(147, 112, 219);
+
+
+}
+
+.buttons-modulos{
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+    border: solid 1px #9370DB;
+    border-radius: 30px;
+    background-color: #282c34;
+     
+}
+
+.buttons-modulos > a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.buttons-modulos:hover{
+    background-color: rgb(147, 112, 219);;
+    cursor: pointer;
+}
+
+
+.div-button{
+  display: flex;
+  justify-content: center;
+}
+
+.button-cadastrar{
+  
+  margin-bottom: 100px;
+  width: 200px;
+  height: 40px;
+  border: solid 1px #9370DB;
+  border-radius: 30px;
+  background-color: #282c34;
+  
+  
+}
+
+.button-cadastrar > a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-cadastrar:hover{
+  background-color: #9370DB;
+}
+
+/* Atribuindo responsividade */
+
+@media(max-width: 1240px){
+  .grid-modules{
+    grid-template-areas: 
+  "button-class button-class";
+  }
+}
+
+@media(max-width:828px){
+  .grid-modules{
+    grid-template-areas: 
+  "button-class";
+  }
+}
+  

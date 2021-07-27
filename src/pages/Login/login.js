@@ -1,17 +1,44 @@
 import './login.css';
 import React from 'react';
-
+import api_login from '../../service/api_post_user'
+import { Route, Router } from 'react-router';
+import { Redirect } from 'react-router-dom';
 
 
 class Login extends React.Component {
 
     constructor(props) {
         super(props);
-        this.teste = this.teste.bind(this);
+        this.state = {
+            email: '',
+            password: '',
+            dados: []
+        }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.componentDidMount = this.componentDidMount(this);
+
     }
-    teste() {
-        console.log('estou no teste');
+    handleChange(event) {
+        this.setState({ user: event.target.user })
+        this.setState({ password: event.target.password })
     }
+
+    async componentDidMount(event) {
+        const response = await api_login.get(this.state.user);
+        try {
+            if (response) {
+                console.log(response);
+                < Route exact path="/" >
+
+                </Route >
+            }
+        } catch (error) {
+
+        }
+    }
+
+
 
     render() {
         return (
@@ -24,14 +51,21 @@ class Login extends React.Component {
                     </div>
 
                     <div className="box-login responsividade">
-                        <form>
+                        <form onSubmit={this.componentDidMount}>
                             <div className="input-container">
-                                <input id="email" type="email" placeholder="E-mail" className="input" required></input>
+                                <input id="user" type="text" value={this.state.user} placeholder="Usuario" className="input" required></input>
                             </div>
                             <div className="input-container">
-                                <input type="password" placeholder="Senha" className="input" required></input>
+                                <input
+                                    type="password"
+                                    placeholder="Senha"
+                                    value={this.state.password}
+                                    className="input"
+                                    required
+                                    onChange={this.handleChange}
+                                />
                             </div>
-                            <button onClick={this.teste} type="submit" className="button-form"><b>Entrar</b></button>
+                            <button type="submit" className="button-form"><b>Entrar</b></button>
                         </form>
                         <div>
 
