@@ -30,7 +30,7 @@ function Cadastro() {
             <header>
                 <h1 className="default-font-collor"><a className="default-font-collor h1-catalogo" href="/">Catálogo de Aulas</a></h1>
                 <ul className="menu">
-                    <li><a href="/">Sign up</a></li>
+                    <li><a href="/painel">Painel</a></li>
                 </ul>
             </header>
             <section className="container-edit">

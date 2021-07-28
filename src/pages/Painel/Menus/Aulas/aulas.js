@@ -1,19 +1,19 @@
 import React from 'react';
-import './modulos.css';
-import api_modulos from "../../../../service/api_get_modulos";
-import { useHistory } from 'react-router-dom'
+import './aulas.css';
+import api_aulas from "../../../../service/api_get_aulas";
 
 
-class Modulos extends React.Component {
+
+class Aulas extends React.Component {
 
     state = {
-        catalogo: [],
+        aulas: [],
     }
 
     async componentDidMount() {
-        const response = await api_modulos.get('');
+        const response = await api_aulas.get('');
         try {
-            this.setState({ catalogo: response.data });
+            this.setState({ aulas: response.data });
         } catch (error) {
             alert("Houve um problema na chamada ao servidor!")
         }
@@ -21,9 +21,9 @@ class Modulos extends React.Component {
 
     async excluirModulo(id) {
 
-        const response = await api_modulos.delete(id + "/");
+        const response = await api_aulas.delete(id + "/");
         try {
-            this.setState({ catalogo: response.data })
+            this.setState({ aulas: response.data })
 
         } catch (error) {
             alert("Não foi possível excluir o módulo")
@@ -32,7 +32,7 @@ class Modulos extends React.Component {
 
     render() {
 
-        const { catalogo } = this.state;
+        const { aulas } = this.state;
 
         return (
             <div>
@@ -45,23 +45,23 @@ class Modulos extends React.Component {
                 <h1 className="title-container">Módulos</h1>
                 <div className="div-button">
                     <button className="button-cadastrar">
-                        <a href={"/modulos/cadastrar"}>Cadastrar Novo Módulo</a>
+                        <a href={"/aulas/cadastrar"}>Cadastrar Nova Aula</a>
                     </button>
                 </div>
                 <section className="container">
                     <div className="grid-modules">
-                        {catalogo.map(catalogo => (
+                        {aulas.map(aulas => (
 
-                            <button className="button-class" key={catalogo}>
+                            <button className="button-class" key={aulas}>
                                 <div className="intra-button">
                                     <h5 className="default-font-collor">Aqui ficara uma imagem</h5>
                                 </div>
                                 <div>
-                                    <h5 className="default-font-collor">{catalogo.nome}</h5>
-                                    <span className="default-font-collor">{catalogo.num_aulas} aulas</span>
+                                    <h5 className="default-font-collor">{aulas.nome}</h5>
+                                    <span className="default-font-collor">{aulas.data_aula} aulas</span>
                                 </div>
-                                <button className="buttons-modulos"><a href={"/modulos/edit/" + (catalogo.id)}>Editar</a></button>
-                                <button className="buttons-modulos"><a onClick={() => this.excluirModulo(catalogo.id)}>Excluir</a></button>
+                                <button className="buttons-modulos"><a href={"/aulas/edit/" + (aulas.id)}>Editar</a></button>
+                                <button className="buttons-modulos"><a onClick={() => this.excluirModulo(aulas.id)}>Excluir</a></button>
                             </button>
                         ))}
                     </div>
@@ -71,4 +71,4 @@ class Modulos extends React.Component {
     }
 }
 
-export default Modulos
+export default Aulas

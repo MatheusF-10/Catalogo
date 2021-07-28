@@ -16,10 +16,8 @@ function Painel() {
                     <a className="link-itens" href="/modulos"><center>Módulos</center></a>
                 </div>
                 <div className="item-painel">
-                    <a className="link-itens" href="/modulos"><center>Aulas</center></a>
+                    <a className="link-itens" href="/aulas"><center>Aulas</center></a>
                 </div>
-                <div className="item-painel">
-                    <a className="link-itens" href="/modulos"><center>Usuários</center></a></div>
             </section>
         </div>
     );

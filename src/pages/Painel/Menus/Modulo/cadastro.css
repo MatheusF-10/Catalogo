@@ -33,3 +33,16 @@
     margin-right: 10px;
     background-color: #fff;
 }
+
+
+@media(max-width:746px){
+    .input-edit{
+        width: 400px;
+    }
+}
+
+@media(max-width:540px){
+    .input-edit{
+        width: 300px;
+    }
+}

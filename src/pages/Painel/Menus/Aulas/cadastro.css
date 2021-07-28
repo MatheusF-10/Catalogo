@@ -1,0 +1,54 @@
+.container-edit{
+    
+}
+
+.titulo-formulario{
+    color: #fff;
+}
+
+.formulario{
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-edit{
+    background-color: #4F4F4F;
+    border-color: #fff;
+    outline: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.select-modulo{
+    width: 640px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 40px;
+    background-color: #4F4F4F;
+    color: #fff;
+    padding-left: 20px;
+    outline: none;
+}
+
+.input-edit:focus{
+    border-color: #00FF00;
+}
+
+.submitform-button{
+    width: 200px;
+    height: 40px;
+    background-color:	#808080 ;
+    cursor: pointer;
+}
+
+.submitform-button:hover{
+    background-color: #C0C0C0;
+}
+
+@media(max-width:749px){
+    .select-modulo{
+        width: 400px;
+    }
+}
