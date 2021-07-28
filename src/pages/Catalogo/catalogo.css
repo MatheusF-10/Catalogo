@@ -155,7 +155,7 @@ header{
   max-width: 300px;
   min-width: 200px;
 
-  height: 200px;
+  height: 100px;
   cursor: pointer;
   background-color: #282c34;
   grid-area: "button-class";
