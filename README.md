@@ -32,11 +32,18 @@ A propriedade de edição de ambos está funcionando perfeitamente.
 
 A prioriedade de exclusão de ambos, ao clicar em excluir lhe retorna para uma tela dizendo que não há "x" function declarada, porém basta dar um reload que estará funcionando.
 
+O login autenticado, mencionado acima, funciona para acessar o painel, porém as funções do sistema não estão requisitando um token de autenticação e tudo mais, porque não consegui implementar esta parte.
+
 (OBSERVAÇÃO: Este foi o primeiro projeto que desenvolvi em REACT JS)
 
 Todas as views estão responsivas, responsividade e estilização implementadas apenas via css, sem utilização do bootstrap.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+CONSIDERAÇÕES
+
+Este foi meu primeiro projeto com react, alguns módulos como login autenticado e requisições privadas foram passos que deixei para configurar por último, tamanho
+desafio que encontrei nesses 7 dias que tive para conciliar, meu trabalho, faculdade, estudo da linguagaem e implementação.
+Agradeço demais a oportunidade e o desafio.
 
 
