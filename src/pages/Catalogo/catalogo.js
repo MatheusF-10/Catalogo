@@ -74,7 +74,7 @@ class Catalogo extends React.Component {
 
                             <button onClick={() => this.showAulas(catalogo.id)} className="button-class" key={catalogo}>
                                 <div className="intra-button">
-                                    <h5 className="default-font-collor">Aqui ficara uma imagem</h5>
+
                                 </div>
                                 <div>
                                     <h5 className="default-font-collor">{catalogo.nome}</h5>
